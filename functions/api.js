@@ -23,10 +23,6 @@ router.get("/", (req, res) => {
   res.send("Server Started");
 });
 
-// app.listen(port, () => {
-//   console.log(`Server Started on port ${port}`);
-// });
-
 app.use(bodyParser.json());
 app.use(cors());
 app.use("/.netlify/functions/api/books", bookRoutes);
