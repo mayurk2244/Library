@@ -17,6 +17,11 @@ exports.get = async (req, res, next) => {
       .select("isbn title author -_id")
       .limit(finalSize * 1)
       .skip((finalPage - 1) * finalSize);
+
+    booksDetail.forEach((data, i) => {
+      booksDetail[i].id = finalSize * (finalPage - 1) + (i + 1);      
+    });
+
     const result = {
       total: count,
       page: finalPage,
