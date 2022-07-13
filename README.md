@@ -2,11 +2,17 @@
 # Library
 Simple Library Management with book details
 
-### Demo
-
-All Available Books - https://testlibrary.netlify.app/.netlify/functions/api/books
-
-Books with Pagination
-https://testlibrary.netlify.app/.netlify/functions/api/books?page=1&size=3
 
 
+## Demo
+
+With page & size  - https://testlibrary.netlify.app/.netlify/functions//api/books?page=1&amp;size=5
+
+With default page & default size - 
+https://testlibrary.netlify.app/.netlify/functions/api/books
+
+With default page - 
+https://testlibrary.netlify.app/.netlify/functions/api/books?size=5
+
+With page,size & filter - 
+https://testlibrary.netlify.app/.netlify/functions/api/books?title=javascript&amp;page=1&amp;size=3
