@@ -29,8 +29,8 @@ router.get("/", (req, res) => {
 
 app.use(bodyParser.json());
 app.use(cors());
-app.use("/.netlify/functions/server/api/books", bookRoutes);
-app.use("/.netlify/functions/server", router);
+app.use("/.netlify/functions/api/books", bookRoutes);
+app.use("/.netlify/functions/api", router);
 app.use(function (req, res) {
   res.status(404).json({
     message: "URL Not Found.",
